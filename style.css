@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+
+body{
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dark{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.30);
+}
+
+header{
+    padding-top: 99px;
+    height: 155px;
+    border-bottom: 1px solid white;
+}
+
+header, .nav_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    width:  90%;
+    margin: 0 auto;
+}
+
+.box{
+    width: 600px;
+    margin: 50px auto;
+}
+
+.car_neon{
+    padding: 3px;
+    /* border: 13px double gray; */
+    border-radius: 15px;
+    box-shadow: -19px 18px 10px 0px rgba(199,36,199,1);
+}
+
+.nav_list{
+    margin-left: 806px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.search_icon, 
+.logo {
+    cursor: pointer;
+}
+
+.nav_list li{
+    margin-right: 50px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.nav_list li:hover {
+    color: rgb(81, 255, 0);
+    border-bottom: 2px solid rgb(81, 255, 0);
+    border-top: 2px solid rgb(81, 255, 0)
+}
