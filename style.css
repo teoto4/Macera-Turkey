@@ -111,22 +111,25 @@ header, .nav_list {
 
 .second_block {
     display: flex;
+    justify-content: space-between;
 }
 
-.second_description {
-    position: absolute;
+
+
+.article_text_box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 1400px;
     width: 296px;
+    height: 260px;
     backdrop-filter: blur(6px);
     background-color: #ffffff50;
     padding-top: 23px;
 }
 
 .cappa {
+    margin-top: 23px;
     margin-right: 110px;
     margin-bottom: 4px;
     font-size: 18.73px;
@@ -138,10 +141,11 @@ header, .nav_list {
     font-size: 14px;
     font-weight: 400;
     line-height: 16.59px;
-    margin-bottom: 24px;
+    
 }
 
 .view_btn {
+    margin-top: 72px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -156,4 +160,28 @@ header, .nav_list {
     padding: 18.89px; 
     padding-right: 60px;
     padding-left: 153px;
+}
+
+
+.social_icon_list{
+    display: flex;
+}
+
+.social_icon{
+    margin-top: 185px;
+    margin-right: 19.37px;
+    fill: white;
+    width: 21px;
+}
+
+
+.useX:hover{
+    fill: red;
+    cursor: pointer;
+}
+
+.arrow{
+    width: 5px;
+    height: 5px;
+    fill: white;
 }
