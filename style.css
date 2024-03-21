@@ -22,7 +22,8 @@ h1, h2, h3{
 
 .dark{
     width: 100vw;
-    height: 100vh;
+    position: absolute;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.30);
 }
 
@@ -115,21 +116,19 @@ header, .nav_list {
 }
 
 
-
 .article_text_box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 296px;
-    height: 260px;
+    height: 155px;
     backdrop-filter: blur(6px);
     background-color: #ffffff50;
-    padding-top: 23px;
+    
 }
 
 .cappa {
-    margin-top: 23px;
     margin-right: 110px;
     margin-bottom: 4px;
     font-size: 18.73px;
@@ -141,25 +140,26 @@ header, .nav_list {
     font-size: 14px;
     font-weight: 400;
     line-height: 16.59px;
-    
 }
 
 .view_btn {
-    margin-top: 72px;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
     align-items: center;
     width: 296px;
     height: 54px;
     background-color: #E30A17;
 }
 
-.view_btn a{
+.view_btn p{
     font-size: 14.04px;
     font-weight: 500;
-    padding: 18.89px; 
-    padding-right: 60px;
-    padding-left: 153px;
+    margin-right: 15.29px;
+}
+
+.arrow {
+    filter: invert();
+    margin-right: 34.08px;
 }
 
 
@@ -168,7 +168,7 @@ header, .nav_list {
 }
 
 .social_icon{
-    margin-top: 185px;
+    margin-top: 118.5px;
     margin-right: 19.37px;
     fill: white;
     width: 21px;
@@ -180,8 +180,10 @@ header, .nav_list {
     cursor: pointer;
 }
 
-.arrow{
-    width: 5px;
-    height: 5px;
-    fill: white;
+
+.absolute {
+    position: absolute;
+    margin-top: 530px;
+    top: 100px;
+    right: 94px;
 }
