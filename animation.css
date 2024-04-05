@@ -1,0 +1,92 @@
+.slide-in-blurred-right {
+	        animation: slide-in-blurred-right 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+                animation-delay: 4s;
+}
+
+  @keyframes slide-in-blurred-right {
+    0% {
+      -webkit-transform: translateX(10000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(10000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  .color-change-5x {
+	-webkit-animation: color-change-5x 8s linear infinite alternate both;
+	        animation: color-change-5x 8s linear infinite alternate both;
+                animation-delay: 5s;
+}
+
+
+      @keyframes color-change-5x {
+        0% {
+         background: #ea2222;
+        }
+        25% {
+          background: #b22cff;
+        }
+        50% {
+                background: #19dcea;
+        }
+        75% {
+          background: #f5be10;
+        }
+        100% {
+          background: #3bd80d;
+        }
+      }
+
+
+      .text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation-delay: 2s;
+}
+
+
+@keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+}
+
+.kenburns-left {
+	-webkit-animation: kenburns-left 4s ease-in reverse both;
+	        animation: kenburns-left 4s ease-in reverse both;
+}
+
+@keyframes kenburns-left {
+        0% {
+          -webkit-transform: scale(1) translate(0, 0);
+                  transform: scale(1) translate(0, 0);
+          -webkit-transform-origin: 16% 50%;
+                  transform-origin: 16% 50%;
+        }
+        100% {
+          -webkit-transform: scale(1.25) translate(-20px, 15px);
+                  transform: scale(1.25) translate(-20px, 15px);
+          -webkit-transform-origin: left;
+                  transform-origin: left;
+        }
+      }
+      
