@@ -9,6 +9,12 @@
     color: white;
 }
 
+:root {
+    --form_background:#fff;
+    --main_form-color:#E30A17;
+    --font-opacity: #ffffff30;
+}
+
 
 body {
     width: 100vw;
@@ -222,47 +228,99 @@ header, .nav_list {
 
 .forma_body {
     position: relative;
-    background-color: #fff;
-    width: 500px;
-    height: 600px;
+    background-color: var(--form_background);
+    width: 350px;
+    height: 416.5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 
-.fotma_title {
-    font-size: 20px;
-    color: black;
-}
+
 
 .forma_body input {
-    margin-top: 50px;
-    padding: 20px;
-    width: 80%;
-    color: black;
+    margin-top: 10px;
+    padding: 14px;
+    border-radius: 10px;
+    width: 308px;
+    color: var(--font-opacity);
     border: solid 1px black;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    color: black;
 }
 
 .forma_body input:focus {
     outline: none;
 }
 
+
+
 button {
     cursor: pointer;
     border-style: none;
 }
 
-.forma_body button {
-    outline: none;
-    margin-top: 20px;
-    width: 50%;
-    height: 10%;
-    background-color: #E30A17;
+.name_box {
+    display: flex;
 }
 
 
 
+.name_box input {
+    border-radius: 10px;
+    width: 151px;
+    padding: 14px;
+    margin-left: 6px;
+    
+}
+
+.name_box input:first-child {
+    margin-left: 0px;
+}
+
+.register_box {
+    display: flex;
+    align-items: center;
+}
+
+.register_box p {
+    margin-left: 12.4px;
+}
+
+.circle {
+    height: 19.2px;
+    width: 19.2px;
+}
+
+.forma_body button {
+    outline: none;
+    margin-top: 20px;
+    width: 308px;
+    border-radius: 10px;
+    height: 10%;
+    background-color: var(--main_form-color);
+}
+
+.sub_title_p {
+    color: grey;
+    font-size: 14.5px;
+    font-weight: 400;
+    line-height: 21.75px;
+    margin-top: 9.5px;
+}
+
+
+.main_text_form {
+    font-size: 28px;
+    color: var(--main_form-color);
+}
+
+.sub_title_p a{
+    color: var(--main_form-color);
+    text-decoration:underline;
+}
 
 .forma_close {
     position: absolute;
