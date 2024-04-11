@@ -218,6 +218,12 @@ header, .nav_list {
 }
 
 
+
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
 .forma_container {
     display: flex;
     height: 100%;
@@ -283,11 +289,18 @@ button {
 .register_box {
     display: flex;
     align-items: center;
+    margin-bottom: 9.12px;
+
 }
 
 .register_box p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
     margin-left: 12.4px;
 }
+
+
 
 .circle {
     height: 19.2px;
@@ -303,12 +316,14 @@ button {
     background-color: var(--main_form-color);
 }
 
+
+
 .sub_title_p {
     color: grey;
+    font-family: "Montserrat", sans-serif;
     font-size: 14.5px;
     font-weight: 400;
     line-height: 21.75px;
-    margin-top: 9.5px;
 }
 
 
@@ -329,4 +344,13 @@ button {
     font-size: 21px;
     cursor: pointer;
     color: black;
+}
+
+.submit_btn {
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+#signin_now {
+    margin-top: 9.12px;
 }
