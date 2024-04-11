@@ -16,6 +16,12 @@
 }
 
 
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden
+}
+
 
 .background {
     width: 100%;
@@ -271,14 +277,12 @@ button {
 .name_box input {
     border-radius: 10px;
     width: 151px;
-    padding: 14px;   
-}
-
-.name_box label {
+    padding: 14px;
     margin-left: 6px;
+    
 }
 
-.name_box label:first-child {
+.name_box input:first-child {
     margin-left: 0px;
 }
 
@@ -349,21 +353,4 @@ button {
 
 #signin_now {
     margin-top: 9.12px;
-}
-
-label{
-    position: relative;
-}
-
-span{
-    color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 40%;
-    left: 15px;
-}
-
-form label input:focus + span {
-    top: -10%;
-    color: black;
-    font-size: 15px;
 }
