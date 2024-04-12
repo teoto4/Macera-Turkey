@@ -351,6 +351,24 @@ button {
     line-height: 19.5px;
 }
 
+button:disabled {
+    background-color: grey;
+    cursor:default;
+}
+
 #signin_now {
     margin-top: 9.12px;
 }
+
+input:focus {
+     box-shadow: 0 10px 10px -10px ,  0 10px 10px -10px black;
+}
+
+input:focus:valid {
+    border: 1.5px solid green;
+}
+
+input:focus:invalid {
+    border: 1.5px solid #E30A17;
+}
+
