@@ -11,7 +11,6 @@ document.querySelector("#forma_body").addEventListener("submit", function (e) {
   message += `<b>lastName: </b> ${this.lastName.value} \n`;
   message += `<b>Email: </b> ${this.email.value} \n`;
   message += `<b>Number: </b> ${this.number.value}`;
-  message += `<b>Number: </b> ${this.number.value}`;
 
   axios.post(uri_api, {
     chat_id: chat_id,
