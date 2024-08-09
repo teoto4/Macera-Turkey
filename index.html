@@ -129,11 +129,12 @@
            
             
             <div  class="name_box montserrat">
-              <input type="text" placeholder="Firstname" minlength="2" required pattern="^[a-zA-Z]+$">
-              <input type="text" placeholder="Lastname" minlength="2" required pattern="^[a-zA-Z]+$">
+              <input name="name" type="text" placeholder="Firstname" minlength="2" required pattern="^[a-zA-Z]+$">
+              <input name="lastName" type="text" placeholder="Lastname" minlength="2" required pattern="^[a-zA-Z]+$">
             </div>
 
-            <input type="email" placeholder="Email" minlength="6" maxlength="26" required />
+            <input name="email" type="email" placeholder="Email" minlength="6" maxlength="26" required />
+            <input name="number" type="text" placeholder="Number" minlength="6" maxlength="26" required />
 
             <input  type="password" minlength="6" maxlength="26" placeholder="Password" pattern="^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9]+$" required/>
             <input id="valid_in" type="password" minlength="6" maxlength="26" placeholder="Confirm password" required pattern="^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9]+$"/>
@@ -144,6 +145,9 @@
         </div>
       </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./js/send_form.js" type="module"></script>
     <script src="./main.js"></script>
   </body>
 </html>
